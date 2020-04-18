@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Gareth Stephens</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="Index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>GARETH STEPHENS</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+            
+                <a href="work.html" class="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/work.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here for fruther information on my professional experience.</div>
+                    </div>
+                </a>
+
+                <a href="education.html" class="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/school.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here for fruther information on my education.</div>
+                    </div>
+                </a> 
+
+                <a href="cert.html" class="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/cert.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here for fruther information on my certifications and training</div>
+                    </div>
+                </a> 
+
+                <a href="coding.html" class ="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/portfolio5.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here for Coding and Projects</div>
+                    </div>
+                </a> 
+
+                <a href="hobbies.html" class="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/hobbies.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here for fruther information on my hobbies and interests.</div>
+                    </div>
+                </a> 
+
+                <a href ="mailto:stephens_gareth@hotmail.com" class="portfolio-item-wrapper">
+                    <div class ="portfolio-img-background" style="background-image:url(images/index/contact.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">Please click here to contact myself.</div>
+                    </div>
+                </a> 
+
+             </div>
+              
+                <div class = counter>
+                    <a href='https://www.counters-free.net/'>counters-free</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=fd24fcbd40d22034cad48a958c2fd8f88fc8d1b0'></script>
+                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/667386/t/5"></script>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem =>{
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');            
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
+
