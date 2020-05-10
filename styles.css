@@ -196,9 +196,18 @@ Body{
 .coding-image-wrapper img{
     width: 100%;
     padding: 20px;
+    align-items: center;
 }
 
 
 .coding-content-wrapper h1{
     color: lightseagreen;
+}
+
+
+.coding-two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1px;
+    row-gap: 5px;
 }
