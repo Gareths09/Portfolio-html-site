@@ -236,3 +236,20 @@ p{
     margin: auto;
     width: 50%;
 }
+
+/* Coding Buttons */
+.btn {
+    font-size: 20px;
+    border-radius: 5px;
+    background: white;
+    margin-right: 20px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn a:hover {
+    color: lightseagreen;
+}
