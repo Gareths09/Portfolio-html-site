@@ -13,11 +13,12 @@ Body{
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 25px;
 }
 
 .left-side {
     display: flex;
+    padding-top: 20px;
 }
 
 .nav-wrapper > .left-side > div {
@@ -53,6 +54,16 @@ Body{
 
 .active-nav-link a{
     color: black !important;
+}
+
+.brand{
+    display: flex;
+}
+
+.brand i {
+    color:black;
+    padding-left: 20px;
+    padding-top: 6px;
 }
 
 /* Portfolio Styles */
@@ -140,6 +151,7 @@ Body{
 
 .work-image-wrapper img {
     width: 60%;
+    padding: 30px 30px;
 }
 
 .work-content-wrapper {
@@ -148,6 +160,10 @@ Body{
 
 .work-content-wrapper h1{
     color: lightseagreen;
+}
+
+p{
+    text-align: justify;
 }
 
 /* cert page */
@@ -196,6 +212,7 @@ Body{
 .coding-image-wrapper img{
     width: 100%;
     padding: 20px;
+    padding-left: 40px;
     align-items: center;
 }
 
@@ -204,10 +221,18 @@ Body{
     color: lightseagreen;
 }
 
+.coding-content-wrapper p{
+    padding-right: 40px;
+}
 
 .coding-two-column-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1px;
     row-gap: 5px;
+}
+
+.coding-image-wrapper {
+    margin: auto;
+    width: 50%;
 }
