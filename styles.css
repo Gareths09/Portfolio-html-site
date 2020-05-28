@@ -12,11 +12,16 @@ Body{
 /* Nav Styles */
 .nav-wrapper {
     display: flex;
+    background: #fff;
     justify-content: space-between;
     padding: 25px;
-    /* border-bottom: 1px solid black;*/
+    /*border-bottom: 1px solid black;*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
 }
+
 
 .left-side {
     display: flex;
